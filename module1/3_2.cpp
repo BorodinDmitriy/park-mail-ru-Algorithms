@@ -28,7 +28,7 @@ int findNumber(int *arr, int size) {
 	while (left <= size) {
 		if (right > size)
 			right = size;
-		if ((arr[right] < arr[right - 1]) && (arr[right > arr[right + 1]])){
+		if ((arr[right] < arr[right - 1]) && (arr[right] > arr[right + 1])){
 			return find(arr, left, right);
 		} else {
 			left <<= 1;
