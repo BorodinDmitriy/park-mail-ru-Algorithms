@@ -50,9 +50,9 @@ long** init(int n)
 
 void print(long** matr, long n)
 {
-	for (long i = 0; i < n; i++)
+	for (long i = 0; i < n + 1; i++)
 	{
-		for (long j = 0; j < n; j++)
+		for (long j = 0; j < n + 1; j++)
 		{
 			printf("%d ", matr[i][j]);
 		}
